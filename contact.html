@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Contact Us — AccountsParadise</title>
+  
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+<link rel="stylesheet" href="./assets/styles.css"/>
+<script defer src="./assets/app.js"></script>
+
+</head>
+<body data-active="contact">
+  <header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="./index.html" aria-label="AccountsParadise">
+      <img src="./assets/logo-cat.svg" alt="AccountsParadise logo"/>
+      <div>
+        <div style="font-size:15px;">AccountsParadise</div>
+        <small>Midman-first marketplace</small>
+      </div>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="./index.html" data-nav="store">Store</a>
+      <a href="./games.html" data-nav="games">Games</a>
+      <a href="./contact.html" data-nav="contact">Contact Us</a>
+      <a href="./login.html" data-nav="login">Login</a>
+    </nav>
+
+    <button id="menuBtn" class="menu-btn" aria-label="Open menu">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<div id="drawerBackdrop" class="drawer-backdrop" aria-hidden="true">
+  <div class="drawer glass">
+    <div class="row" style="justify-content:space-between; padding:6px 6px 10px;">
+      <div class="row">
+        <img src="./assets/logo-cat.svg" alt="" style="width:28px;height:28px;">
+        <div style="font-weight:1000;">Menu</div>
+      </div>
+      <button id="drawerClose" class="btn sm ghost" aria-label="Close">✕</button>
+    </div>
+    <div class="stack" style="gap:6px;">
+      <a href="./index.html" data-dnav="store"><span>Store</span><span class="pill">Browse</span></a>
+      <a href="./games.html" data-dnav="games"><span>Games</span><span class="pill">Filter</span></a>
+      <a href="./contact.html" data-dnav="contact"><span>Contact Us</span><span class="pill">Support</span></a>
+      <a href="./login.html" data-dnav="login"><span>Login</span><span class="pill">Access</span></a>
+    </div>
+  </div>
+</div>
+
+  <main class="container" style="padding:10px 0 40px;">
+    <section class="center-hero">
+      <div class="row" style="justify-content:center;">
+        <span class="pill">Support</span>
+      </div>
+      <h1 class="h1" style="margin-top:14px;">Contact AccountsParadise</h1>
+      <p class="p" style="margin-top:10px; max-width:760px; margin-left:auto; margin-right:auto;">
+        For concerns and inquiries, message us anytime. For urgent help, you can also reach us via our social links.
+      </p>
+
+      <div class="social" aria-label="Social links">
+        <button class="icon-btn" aria-label="Facebook" type="button">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M14 8h3V5h-3c-2 0-4 2-4 4v3H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Chat" type="button">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="grid grid-2" style="margin-top:18px;">
+      <div class="card glass pad-lg">
+        <div class="kicker">Phone</div>
+        <div style="font-weight:1000; font-size:18px; margin-top:8px;">+63 900 000 0000</div>
+      </div>
+      <div class="card glass pad-lg">
+        <div class="kicker">Address</div>
+        <div style="font-weight:1000; font-size:18px; margin-top:8px;">Philippines</div>
+      </div>
+    </section>
+
+    <section id="contactChat" class="grid grid-2" style="margin-top:18px; align-items:start;">
+      <div class="card glass pad-lg">
+        <div class="row" style="justify-content:space-between; align-items:flex-start;">
+          <div class="stack" style="gap:4px;">
+            <div style="font-weight:1000; font-size:18px;">Email Support</div>
+            <div class="p" style="font-size:13px;">Send a message and we’ll get back to you.</div>
+          </div>
+          <button id="templateBtn" class="btn sm ghost" type="button">Insert Template</button>
+        </div>
+
+        <div class="card glass-soft pad" style="margin-top:14px; border-radius:18px;">
+          <div class="row" style="justify-content:space-between; align-items:center; flex-wrap:wrap;">
+            <div class="row">
+              <div class="icon-btn" style="width:44px;height:44px;">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+              </div>
+              <div class="stack" style="gap:2px;">
+                <div style="font-weight:1000;">Support Email</div>
+                <div class="label" style="font-weight:800;">support@accountsparadise.com</div>
+              </div>
+            </div>
+            <span class="pill">Typically replies within a few hours</span>
+          </div>
+
+          <div class="stack" style="margin-top:14px; gap:10px;">
+            <div class="grid grid-2">
+              <div class="stack" style="gap:8px;">
+                <div class="label">Name</div>
+                <input class="input" placeholder="Your name"/>
+              </div>
+              <div class="stack" style="gap:8px;">
+                <div class="label">Email</div>
+                <input class="input" placeholder="you@email.com"/>
+              </div>
+            </div>
+
+            <div class="stack" style="gap:8px;">
+              <div class="label">Category</div>
+              <select class="input">
+                <option>General Support</option>
+                <option>Purchase Verification</option>
+                <option>Dispute / Report</option>
+                <option>Merchant Partnership</option>
+              </select>
+            </div>
+
+            <div class="stack" style="gap:8px;">
+              <div class="label">Message</div>
+              <textarea id="contactMessage" class="input" rows="6" placeholder="Write your message..." style="resize:vertical;"></textarea>
+            </div>
+
+            <div class="row" style="justify-content:flex-end; flex-wrap:wrap;">
+              <button id="contactSendBtn" class="btn primary" type="button">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card glass pad-lg">
+        <div class="row" style="justify-content:space-between; align-items:flex-start;">
+          <div class="stack" style="gap:4px;">
+            <div style="font-weight:1000; font-size:18px;">Chat Support</div>
+            <div class="p" style="font-size:13px;">Quick replies and guided help.</div>
+          </div>
+          <button class="btn sm ghost" data-toast="Chat refreshed" type="button">Refresh</button>
+        </div>
+
+        <div class="card glass-soft pad" style="margin-top:14px; border-radius:18px;">
+          <div class="row" style="justify-content:space-between; align-items:center; flex-wrap:wrap;">
+            <div class="row">
+              <div class="icon-btn" style="width:44px;height:44px;">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
+              </div>
+              <div class="stack" style="gap:2px;">
+                <div style="font-weight:1000;">AccountsParadise Support</div>
+                <div class="label" style="font-weight:800;">Typically replies within a few hours</div>
+              </div>
+            </div>
+            <span class="pill">Online</span>
+          </div>
+
+          <div class="stack" style="margin-top:14px; gap:10px;">
+            <div class="label">Quick templates</div>
+            <select class="input">
+              <option>Select template…</option>
+              <option>Purchase verification</option>
+              <option>Dispute report</option>
+              <option>Merchant onboarding</option>
+              <option>Refund inquiry</option>
+            </select>
+
+            <div class="hero-media" style="min-height:260px;">
+              <div style="padding:14px;">
+                <div class="pill">Chat timeline</div>
+                <div class="stack" style="margin-top:12px; gap:10px;">
+                  <div class="card glass-soft pad" style="border-radius:16px; width:85%;">
+                    <div style="font-weight:900;">Support</div>
+                    <div class="p" style="font-size:13px; margin-top:6px;">Share your Order ID and attach your receipt for faster review.</div>
+                  </div>
+                  <div class="card glass-soft pad" style="border-radius:16px; width:85%; margin-left:auto;">
+                    <div style="font-weight:900;">You</div>
+                    <div class="p" style="font-size:13px; margin-top:6px;">Order ID: ORD-2201</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <input class="input" placeholder="Type a message..." />
+              <button class="btn primary" data-toast="Message sent" type="button">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="fabChat" class="fab" aria-label="Open chat support" type="button">
+    <svg class="icon" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
+  </button>
+</body>
+</html>

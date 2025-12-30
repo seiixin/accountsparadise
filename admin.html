@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Admin/Midman — AccountsParadise</title>
+  
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+<link rel="stylesheet" href="./assets/styles.css"/>
+<script defer src="./assets/app.js"></script>
+
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <img src="./assets/logo-cat.svg" alt=""/>
+        <div>
+          <div style="font-size:15px;">AccountsParadise</div>
+          <small>Admin / Midman Console</small>
+        </div>
+      </div>
+
+      <div class="row" style="gap:10px;">
+        <a class="btn sm ghost" href="./contact.html">Support</a>
+        <a class="btn sm ghost" href="./login.html">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="rolebar">
+      <div class="rolebar-inner">
+        <div class="row">
+          <span class="pill">Admin</span>
+          <span class="pill">Midman</span>
+        </div>
+        <div class="role-nav" aria-label="Admin navigation">
+          <a href="#midman" data-active="true">Midman Panel</a>
+          <a href="#users">Users</a>
+          <a href="#disputes">Disputes</a>
+          <a href="#platform">Platform</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="midman" class="section" style="padding-top:10px;">
+      <div class="section-title">
+        <h2 class="h2">Midman Panel</h2>
+        <div class="p">Verify ID and payment before release.</div>
+      </div>
+
+      <div class="card glass pad" style="margin-top:14px;">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th><th>Offer</th><th>Buyer</th>
+              <th>Valid ID</th><th>Receipt</th>
+              <th>ID Status</th><th>Payment</th><th>Created</th><th class="td-actions">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="midmanBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="users" class="section">
+      <div class="section-title">
+        <h2 class="h2">Users</h2>
+        <div class="p">Manage access and verification.</div>
+      </div>
+
+      <div class="card glass pad" style="margin-top:14px;">
+        <table class="table">
+          <thead><tr><th>ID</th><th>Name</th><th>Role</th><th>Status</th><th class="td-actions">Actions</th></tr></thead>
+          <tbody id="usersBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="disputes" class="section">
+      <div class="section-title">
+        <h2 class="h2">Disputes</h2>
+        <div class="p">Review reported cases.</div>
+      </div>
+
+      <div class="card glass pad" style="margin-top:14px;">
+        <table class="table">
+          <thead><tr><th>ID</th><th>Buyer</th><th>Merchant</th><th>Status</th><th>Reason</th><th>Created</th><th class="td-actions">Actions</th></tr></thead>
+          <tbody id="disputesBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="platform" class="section">
+      <div class="section-title">
+        <h2 class="h2">Platform</h2>
+        <div class="p">Rules and moderation settings.</div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:14px;">
+        <div class="card glass pad">
+          <div class="kicker">Rules</div>
+          <div class="stack" style="margin-top:12px;">
+            <div class="label">Verification window</div>
+            <select class="input">
+              <option>24 hours</option>
+              <option>48 hours</option>
+              <option>72 hours</option>
+            </select>
+            <div class="label">Auto-flag threshold</div>
+            <input class="input" value="3 reports / 7 days"/>
+            <button class="btn primary" data-toast="Rules saved" type="button">Save</button>
+          </div>
+        </div>
+        <div class="card glass-soft pad">
+          <div class="kicker">Moderation</div>
+          <div class="stack" style="margin-top:12px;">
+            <button class="btn ghost block" data-toast="Keyword filters opened" type="button">Keyword filters</button>
+            <button class="btn ghost block" data-toast="Verification settings opened" type="button">Verification settings</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="docBackdrop" class="modal-backdrop" aria-hidden="true">
+    <div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="docTitle">
+      <div class="modal-head">
+        <div>
+          <div class="kicker">Preview</div>
+          <div id="docTitle" style="font-weight:1000; font-size:18px;">Document</div>
+        </div>
+        <button id="docClose" class="btn sm ghost" aria-label="Close" type="button">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="hero-media" style="min-height:420px;">
+          <img id="docImg" alt="Document preview"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

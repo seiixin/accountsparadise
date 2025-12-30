@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" role="img" aria-label="Valid ID preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a0a"/>
+      <stop offset="1" stop-color="#171717"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="650" fill="url(#bg)"/>
+  <rect x="50" y="50" width="900" height="550" rx="32" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+  <text x="100" y="150" fill="rgba(255,255,255,.86)" font-size="44" font-weight="800" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial">Valid ID</text>
+  <text x="100" y="200" fill="rgba(255,255,255,.55)" font-size="18" font-weight="700" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial">Preview</text>
+  <rect x="100" y="250" width="800" height="290" rx="24" fill="rgba(0,0,0,.25)" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+  <circle cx="220" cy="390" r="78" fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.20)" stroke-width="2"/>
+  <rect x="330" y="320" width="540" height="22" rx="11" fill="rgba(255,255,255,.12)"/>
+  <rect x="330" y="360" width="420" height="22" rx="11" fill="rgba(255,255,255,.10)"/>
+  <rect x="330" y="400" width="500" height="22" rx="11" fill="rgba(255,255,255,.08)"/>
+  <rect x="330" y="440" width="360" height="22" rx="11" fill="rgba(255,255,255,.08)"/>
+  <text x="870" y="520" text-anchor="end" fill="rgba(255,255,255,.32)" font-size="72" font-weight="900" font-family="ui-monospace, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace">ID</text>
+</svg>

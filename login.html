@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Login — AccountsParadise</title>
+  
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+<link rel="stylesheet" href="./assets/styles.css"/>
+<script defer src="./assets/app.js"></script>
+
+</head>
+<body data-active="login">
+  <header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="./index.html" aria-label="AccountsParadise">
+      <img src="./assets/logo-cat.svg" alt="AccountsParadise logo"/>
+      <div>
+        <div style="font-size:15px;">AccountsParadise</div>
+        <small>Midman-first marketplace</small>
+      </div>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="./index.html" data-nav="store">Store</a>
+      <a href="./games.html" data-nav="games">Games</a>
+      <a href="./contact.html" data-nav="contact">Contact Us</a>
+      <a href="./login.html" data-nav="login">Login</a>
+    </nav>
+
+    <button id="menuBtn" class="menu-btn" aria-label="Open menu">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<div id="drawerBackdrop" class="drawer-backdrop" aria-hidden="true">
+  <div class="drawer glass">
+    <div class="row" style="justify-content:space-between; padding:6px 6px 10px;">
+      <div class="row">
+        <img src="./assets/logo-cat.svg" alt="" style="width:28px;height:28px;">
+        <div style="font-weight:1000;">Menu</div>
+      </div>
+      <button id="drawerClose" class="btn sm ghost" aria-label="Close">✕</button>
+    </div>
+    <div class="stack" style="gap:6px;">
+      <a href="./index.html" data-dnav="store"><span>Store</span><span class="pill">Browse</span></a>
+      <a href="./games.html" data-dnav="games"><span>Games</span><span class="pill">Filter</span></a>
+      <a href="./contact.html" data-dnav="contact"><span>Contact Us</span><span class="pill">Support</span></a>
+      <a href="./login.html" data-dnav="login"><span>Login</span><span class="pill">Access</span></a>
+    </div>
+  </div>
+</div>
+
+  <main class="container auth-wrap">
+    <section class="card glass auth-card pad-lg">
+      <div class="row" style="justify-content:space-between; align-items:flex-start;">
+        <div class="row">
+          <img src="./assets/logo-cat.svg" alt="" style="width:40px;height:40px;">
+          <div class="stack" style="gap:2px;">
+            <div style="font-weight:1000; font-size:18px; letter-spacing:-0.02em;">Sign in</div>
+            <div class="p" style="font-size:13px;">Choose role then continue.</div>
+          </div>
+        </div>
+        <a class="btn sm ghost" href="./contact.html">Support</a>
+      </div>
+
+      <div class="stack" style="margin-top:16px;">
+        <div class="grid grid-2">
+          <div class="stack" style="gap:8px;">
+            <div class="label">Email</div>
+            <input class="input" placeholder="you@email.com" />
+          </div>
+          <div class="stack" style="gap:8px;">
+            <div class="label">Password</div>
+            <input class="input" placeholder="••••••••" type="password"/>
+          </div>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="stack" style="gap:8px;">
+            <div class="label">Role</div>
+            <select id="role" class="input">
+              <option>Buyer</option>
+              <option>Merchant</option>
+              <option>Admin/Midman</option>
+            </select>
+          </div>
+          <div class="stack" style="gap:8px;">
+            <div class="label">Access</div>
+            <button id="loginBtn" class="btn primary block" type="button">Login</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

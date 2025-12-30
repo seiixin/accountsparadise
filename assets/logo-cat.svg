@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="AccountsParadise cat logo">
+  <g fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M66 92 L48 46 L92 76"/>
+    <path d="M190 92 L164 76 L208 46 L190 92"/>
+    <path d="M68 94 C52 108 44 128 44 152 C44 192 78 220 128 220 C178 220 212 192 212 152 C212 128 204 108 188 94"/>
+    <path d="M96 150 C100 142 110 138 118 144"/>
+    <path d="M160 150 C156 142 146 138 138 144"/>
+    <path d="M128 164 L128 168"/>
+    <path d="M118 174 C124 180 132 180 138 174"/>
+    <path d="M70 166 L108 160"/>
+    <path d="M70 182 L110 176"/>
+    <path d="M186 166 L148 160"/>
+    <path d="M186 182 L146 176"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="112" cy="154" r="5"/>
+    <circle cx="144" cy="154" r="5"/>
+  </g>
+</svg>

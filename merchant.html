@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Merchant — AccountsParadise</title>
+  
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+<link rel="stylesheet" href="./assets/styles.css"/>
+<script defer src="./assets/app.js"></script>
+
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <img src="./assets/logo-cat.svg" alt=""/>
+        <div>
+          <div style="font-size:15px;">AccountsParadise</div>
+          <small>Merchant Console</small>
+        </div>
+      </div>
+
+      <div class="row" style="gap:10px;">
+        <a class="btn sm ghost" href="./buyer.html">Switch to Buyer</a>
+        <a class="btn sm ghost" href="./login.html">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="rolebar">
+      <div class="rolebar-inner">
+        <div class="row">
+          <span class="pill">Merchant</span>
+          <span class="pill">Listings & orders</span>
+        </div>
+        <div class="role-nav" aria-label="Merchant navigation">
+          <a href="#dashboard" data-active="true">Dashboard</a>
+          <a href="#listings">Listings</a>
+          <a href="#orders">Orders</a>
+          <a href="#payout">Payout</a>
+          <a href="./contact.html">Support</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="section" style="padding-top:10px;">
+      <div class="section-title">
+        <h2 class="h2">Dashboard</h2>
+        <div class="row" style="flex-wrap:wrap;">
+          <button class="btn primary" data-open-listing type="button">Add New Item</button>
+          <a class="btn ghost" href="./index.html">Open Store</a>
+        </div>
+      </div>
+
+      <div class="grid grid-3" style="margin-top:14px;">
+        <div class="card glass pad">
+          <div class="kicker">Listings</div>
+          <div style="font-weight:1000; font-size:22px; margin-top:8px;">12</div>
+          <div class="p">Active in store</div>
+        </div>
+        <div class="card glass pad">
+          <div class="kicker">Orders</div>
+          <div style="font-weight:1000; font-size:22px; margin-top:8px;">5</div>
+          <div class="p">Pending actions</div>
+        </div>
+        <div class="card glass pad">
+          <div class="kicker">Rating</div>
+          <div style="font-weight:1000; font-size:22px; margin-top:8px;">4.8</div>
+          <div class="p">Verified merchant</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="listings" class="section">
+      <div class="section-title">
+        <h2 class="h2">Listings</h2>
+        <div class="p">Manage what appears in the store.</div>
+      </div>
+
+      <div class="card glass pad" style="margin-top:14px;">
+        <table class="table">
+          <thead><tr><th>ID</th><th>Title</th><th>Type</th><th>Game</th><th>Price</th><th class="td-actions">Actions</th></tr></thead>
+          <tbody>
+            <tr><td><b>AP-010</b></td><td>Genshin Impact AR55 Account</td><td>Account</td><td>genshin impact</td><td>₱3,500</td><td class="td-actions"><button class="btn sm ghost" data-toast="Listing updated" type="button">Edit</button></td></tr>
+            <tr><td><b>AP-011</b></td><td>CODM CP 5,000</td><td>Item</td><td>codm</td><td>₱2,150</td><td class="td-actions"><button class="btn sm ghost" data-toast="Listing updated" type="button">Edit</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="orders" class="section">
+      <div class="section-title">
+        <h2 class="h2">Orders</h2>
+        <div class="p">Track delivery and verification status.</div>
+      </div>
+
+      <div class="card glass pad" style="margin-top:14px;">
+        <table class="table">
+          <thead><tr><th>Order</th><th>Offer</th><th>Buyer</th><th>Status</th><th class="td-actions">Actions</th></tr></thead>
+          <tbody>
+            <tr><td><b>ORD-2201</b></td><td>AP-001</td><td>Buyer #102</td><td><span class="pill">Awaiting delivery</span></td><td class="td-actions"><button class="btn sm primary" data-toast="Marked delivered" type="button">Mark delivered</button></td></tr>
+            <tr><td><b>ORD-2192</b></td><td>AP-002</td><td>Buyer #118</td><td><span class="pill">Verification</span></td><td class="td-actions"><button class="btn sm ghost" data-toast="Order opened" type="button">Open</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="payout" class="section">
+      <div class="section-title">
+        <h2 class="h2">Payout</h2>
+        <div class="p">Set your payout preferences.</div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:14px;">
+        <div class="card glass pad">
+          <div class="kicker">Method</div>
+          <div class="stack" style="margin-top:12px;">
+            <div class="label">Payment method</div>
+            <select class="input">
+              <option>GCash</option>
+              <option>Bank Transfer</option>
+              <option>PayMaya</option>
+            </select>
+            <div class="label">Account</div>
+            <input class="input" value="09xx-xxx-xxxx"/>
+            <button class="btn primary" data-toast="Payout saved" type="button">Save</button>
+          </div>
+        </div>
+
+        <div class="card glass-soft pad">
+          <div class="kicker">Security</div>
+          <div class="stack" style="margin-top:12px;">
+            <button class="btn ghost block" data-toast="2FA enabled" type="button">Enable 2FA</button>
+            <button class="btn ghost block" data-toast="Password updated" type="button">Change password</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="genericModalBackdrop" class="modal-backdrop" aria-hidden="true">
+    <div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="genericModalTitle">
+      <div class="modal-head">
+        <div>
+          <div class="kicker">Merchant</div>
+          <div id="genericModalTitle" style="font-weight:1000; font-size:18px;">Add New Item</div>
+        </div>
+        <button id="genericModalClose" class="btn sm ghost" aria-label="Close" type="button">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="grid grid-2">
+          <div class="stack" style="gap:8px;">
+            <div class="label">Title</div>
+            <input class="input" placeholder="Example: Valorant Premium Skin Bundle" />
+          </div>
+          <div class="stack" style="gap:8px;">
+            <div class="label">Type</div>
+            <select class="input">
+              <option>Account</option>
+              <option>Item</option>
+            </select>
+          </div>
+
+          <div class="stack" style="gap:8px;">
+            <div class="label">Game (select/search)</div>
+            <input id="gameSearch" class="input" list="gameList" placeholder="Start typing a game name..." />
+            <datalist id="gameList"></datalist>
+            <div class="row" style="justify-content:space-between;">
+              <label class="label" style="display:flex; align-items:center; gap:10px;">
+                <input id="gameOtherToggle" type="checkbox" style="accent-color:white;"/> Add other
+              </label>
+              <span class="label" style="font-weight:800;">Use suggestions</span>
+            </div>
+          </div>
+
+          <div id="gameOtherWrap" class="stack" style="gap:8px; display:none;">
+            <div class="label">Other game name</div>
+            <input class="input" placeholder="Enter game name" />
+          </div>
+
+          <div class="stack" style="gap:8px;">
+            <div class="label">Price</div>
+            <input class="input" placeholder="₱0.00" />
+          </div>
+          <div class="stack" style="gap:8px;">
+            <div class="label">Cover image</div>
+            <input class="input" type="file" accept="image/*"/>
+          </div>
+        </div>
+
+        <div class="stack" style="gap:8px; margin-top:12px;">
+          <div class="label">Requirements / Notes</div>
+          <textarea class="input" rows="4" placeholder="Delivery method, requirements, timeframe..." style="resize:vertical;"></textarea>
+        </div>
+
+        <div class="row" style="justify-content:flex-end; margin-top:14px; flex-wrap:wrap;">
+          <button class="btn ghost" type="button" onclick="document.getElementById('genericModalClose').click()">Cancel</button>
+          <button id="saveListingBtn" class="btn primary" type="button">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

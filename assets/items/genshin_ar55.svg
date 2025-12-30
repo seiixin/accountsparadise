@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Cover image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070707"/>
+      <stop offset="1" stop-color="#141414"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="30%" cy="25%" r="70%">
+      <stop offset="0" stop-color="rgba(255,255,255,.14)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect x="42" y="42" width="1116" height="666" rx="40" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.14)" stroke-width="2"/>
+  <circle cx="360" cy="250" r="260" fill="url(#glow)"/>
+  <circle cx="217" cy="403" r="177" fill="rgba(255,255,255,0.050)"/>
+<circle cx="659" cy="404" r="190" fill="rgba(255,255,255,0.093)"/>
+<circle cx="634" cy="531" r="193" fill="rgba(255,255,255,0.111)"/>
+<circle cx="1051" cy="212" r="192" fill="rgba(255,255,255,0.054)"/>
+<circle cx="550" cy="290" r="118" fill="rgba(255,255,255,0.051)"/>
+<circle cx="300" cy="315" r="138" fill="rgba(255,255,255,0.116)"/>
+  <g opacity="0.86">
+    <rect x="360" y="255" width="480" height="300" rx="22" fill="rgba(0,0,0,.28)" stroke="rgba(255,255,255,.22)" stroke-width="2"/>
+    <circle cx="760" cy="320" r="22" fill="rgba(255,255,255,.22)"/>
+    <path d="M390 520 L520 410 L610 480 L690 420 L810 520 Z" fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.22)" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+</svg>

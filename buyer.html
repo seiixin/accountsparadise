@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Buyer — AccountsParadise</title>
+  
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+<link rel="stylesheet" href="./assets/styles.css"/>
+<script defer src="./assets/app.js"></script>
+
+</head>
+<body>
+  <header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="./index.html" aria-label="AccountsParadise">
+      <img src="./assets/logo-cat.svg" alt="AccountsParadise logo"/>
+      <div>
+        <div style="font-size:15px;">AccountsParadise</div>
+        <small>Midman-first marketplace</small>
+      </div>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="./index.html" data-nav="store">Store</a>
+      <a href="./games.html" data-nav="games">Games</a>
+      <a href="./contact.html" data-nav="contact">Contact Us</a>
+      <a href="./login.html" data-nav="login">Login</a>
+    </nav>
+
+    <button id="menuBtn" class="menu-btn" aria-label="Open menu">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<div id="drawerBackdrop" class="drawer-backdrop" aria-hidden="true">
+  <div class="drawer glass">
+    <div class="row" style="justify-content:space-between; padding:6px 6px 10px;">
+      <div class="row">
+        <img src="./assets/logo-cat.svg" alt="" style="width:28px;height:28px;">
+        <div style="font-weight:1000;">Menu</div>
+      </div>
+      <button id="drawerClose" class="btn sm ghost" aria-label="Close">✕</button>
+    </div>
+    <div class="stack" style="gap:6px;">
+      <a href="./index.html" data-dnav="store"><span>Store</span><span class="pill">Browse</span></a>
+      <a href="./games.html" data-dnav="games"><span>Games</span><span class="pill">Filter</span></a>
+      <a href="./contact.html" data-dnav="contact"><span>Contact Us</span><span class="pill">Support</span></a>
+      <a href="./login.html" data-dnav="login"><span>Login</span><span class="pill">Access</span></a>
+    </div>
+  </div>
+</div>
+
+  <main class="container">
+    <section class="rolebar">
+      <div class="rolebar-inner">
+        <div class="row">
+          <span class="pill">Buyer</span>
+          <span class="pill">Store-first</span>
+        </div>
+        <div class="row" style="flex-wrap:wrap;">
+          <a class="btn sm ghost" href="./merchant.html">Switch to Merchant</a>
+          <a class="btn sm ghost" href="./login.html">Logout</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:8px;">
+      <div class="section-title">
+        <h2 class="h2">Store</h2>
+        <div class="p">Browse and purchase with verification.</div>
+      </div>
+
+      <div class="card glass pad" style="margin-top:14px;">
+        <div id="buyerGameBtns" class="row" style="flex-wrap:wrap; gap:10px;"></div>
+      </div>
+
+      <div class="card glass pad" style="margin-top:14px;">
+        <div class="filters">
+          <div class="stack" style="gap:8px;">
+            <div class="label">Search</div>
+            <input id="offerSearch" class="input" placeholder="Search title, seller, game, or ID..." />
+          </div>
+          <div class="stack" style="gap:8px;">
+            <div class="label">Type</div>
+            <select id="offerType" class="input">
+              <option value="">All types</option>
+              <option value="Account">Account</option>
+              <option value="Item">Item</option>
+            </select>
+          </div>
+          <div class="stack" style="gap:8px;">
+            <div class="label">Game</div>
+            <select id="offerGame" class="input"></select>
+          </div>
+        </div>
+      </div>
+
+      <div id="offersGrid" class="grid grid-3" style="margin-top:14px;"></div>
+    </section>
+  </main>
+
+  
+<div id="modalBackdrop" class="modal-backdrop" aria-hidden="true">
+  <div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <div>
+        <div class="kicker">Purchase</div>
+        <div id="modalTitle" style="font-weight:1000; font-size:18px;">Buy Now</div>
+      </div>
+      <button id="modalClose" class="btn sm ghost" aria-label="Close">✕</button>
+    </div>
+    <div id="modalContent" class="modal-body"></div>
+  </div>
+</div>
+
+</body>
+</html>
