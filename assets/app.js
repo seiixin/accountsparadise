@@ -149,7 +149,7 @@ function initBuyNowModal(){
               </div>
             </div>
 
-            <div class="row" style="justify-content:flex-end; flex-wrap:wrap;">
+            <div class="row modal-actions" style="justify-content:flex-end; flex-wrap:wrap;">
               <button class="btn ghost" data-close-modal type="button">Cancel</button>
               <button class="btn primary" data-confirm-purchase type="button">Confirm Purchase</button>
             </div>

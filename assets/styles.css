@@ -239,7 +239,7 @@ img{ max-width:100%; height:auto; display:block; }
   overflow:hidden;
   border:1px solid rgba(255,255,255,.14);
   background: rgba(0,0,0,.30);
-  min-height: 260px;
+  min-height: 240px;
 }
 .hero-media img{ width:100%; height:100%; object-fit:cover; }
 .hero-actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
@@ -339,6 +339,39 @@ img{ max-width:100%; height:auto; display:block; }
   border-bottom:1px solid rgba(255,255,255,.12);
 }
 .modal-body{ padding:12px 6px 6px; }
+
+
+/* Modal responsive */
+.modal{
+  max-height: calc(100vh - 36px);
+  overflow: hidden;
+}
+.modal-body{
+  max-height: calc(100vh - 148px);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+/* tighten wide file input button spacing */
+input[type="file"].input{
+  padding: 10px 12px;
+}
+
+@media (max-width: 720px){
+  .modal-backdrop{ align-items: flex-end; padding: 0; }
+  .modal{ width:100%; border-radius: 22px 22px 0 0; padding: 12px; max-height: 92vh; }
+  .modal-head{ padding: 10px 10px 12px; }
+  .modal-body{ padding: 12px 10px 14px; max-height: calc(92vh - 78px); }
+  .hero-media{ min-height: 170px; border-radius: 18px; }
+  .card.pad{ padding: 14px; }
+  .card.pad-lg{ padding: 16px; }
+  .modal .row.modal-actions{ flex-direction: column; align-items: stretch; gap:10px; }
+  .modal .row.modal-actions .btn{ width: 100%; }
+}
+
+@media (max-width: 420px){
+  .hero-media{ min-height: 150px; }
+  .h1{ font-size: 34px; }
+}
 
 /* Toast */
 #toastHost{ position:fixed; bottom:18px; right:18px; display:flex; flex-direction:column; gap:10px; z-index:200; }
